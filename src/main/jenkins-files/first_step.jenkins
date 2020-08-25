@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh 'echo \'hello world from jenkins file\''
                 sh 'echo \'start building docker image\''
-                dir ('docker') {
+                dir ('src/main/docker') {
                 sh 'docker build -t first_images . '
                 }
             }
